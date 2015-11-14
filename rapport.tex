@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage{aeguill}
+\usepackage{fontspec}
+\usepackage[francais]{babel}
+\usepackage{xunicode}
+\usepackage{url}
+\usepackage[affil-it]{authblk}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amssymb, amsmath, amsfonts, amscd}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+\setcounter{tocdepth}{2}
+
+\begin{document}
+\pagestyle{empty}
+
+\title{OTR: Off The Record communications}
+
+\author{Antoine FOUCAULT%
+  \thanks{\texttt{toto@univ-rennes1.fr}}}
+\affil{ISTIC, Université de Rennes 1}
+
+\author{Leyton EDGINTON-KING %
+  \thanks{\texttt{leyton.edginton-king@etudiant.univ-rennes1.fr}}}
+\affil{UISTIC, Université de Rennes 1}
+
+\author{Maxime BERTHO%
+  \thanks{\texttt{toto@univ-rennes1.fr}}}
+\affil{ISTIC, Université de Rennes 1}
+
+
+\date{\today}
+
+\maketitle
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Introduction}
+Si vous cherchez des informations sur \LaTeX vous pouvez aller voir \url{https://fr.wikibooks.org/wiki/LaTeX/Les_classes}. 
+Vous pouvez aussi lire rapidement \url{http://www.xm1math.net/doculatex/index.html#base} pour débuter. Cette page peut aussi être utile: \url{http://www.tuteurs.ens.fr/logiciels/latex/}. Pour commencer, il faut installer latex sur votre système. 
+Pour citer une référence, il suffit d'écrire~\cite{PR97}.
+
+\section{Truc}
+\subsection{bidulle truc}
+Pour écrire des maths, il faut utiliser un style particulier: 
+$c=m^e \bmod N$.
+
+\subsection{tribidulle truc}
+
+%\newpage
+\section{Conclusion}
+
+
+
+% soit vous utilisez un fichier biblio.bib avec vos références
+%\bibliographystyle{alpha}
+%\bibliography{biblio} 
+% soit vous les rentrez à la main comme ci-dessous
+\newpage
+\begin{thebibliography}{9}
+\bibitem{PR97}
+E. Petrank and C. Rackoff. 
+\emph{CBC MAC for Real-Time Data Sources}.
+Journal of Cryptology, 2017.
+
+\bibitem{easycrypt}
+G. Barthe, B. Grégoire, P.-Y. Strub. 
+\emph{Easycrypt}. 
+CRYPTO 2011, \url{https://www.easycrypt.info/}
+
+\end{thebibliography}
+
+
+\end{document}
